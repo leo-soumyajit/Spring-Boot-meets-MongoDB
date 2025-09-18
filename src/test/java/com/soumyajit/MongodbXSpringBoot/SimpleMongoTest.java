@@ -35,6 +35,7 @@ public class SimpleMongoTest {
         List<Order> orders = orderRepository.findByStatus("PENDING");
         orders.forEach(System.out::println);
     }
+
     @Test
     public void testFindByStatusOrderByCreatedDesc(){
         List<Order> orders = orderRepository.findByStatusOrderByCreatedAtDesc("PENDING");
