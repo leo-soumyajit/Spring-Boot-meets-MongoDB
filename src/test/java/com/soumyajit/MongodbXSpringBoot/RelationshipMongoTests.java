@@ -39,7 +39,7 @@ public class RelationshipMongoTests {
 
 
         Order order = Order.builder()
-                .status("READY")
+                .status("PENDING")
                 .quantity(20)
                 .totalPrice((700.0)-1)
                 .products(List.of(laptop,mouse))
